@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"> <!-- Seleciona a cadeia de caracteres para o padrão de acentução que usamos no português -->
+        <link rel="stylesheet" type="text/css" href="styles.css" /> <!-- Faz o link para o caminho do arquivo css-->
+        <title>Manipulando o Estilo do Site pela DOM</title> <!-- Nome da abinha do navegador  -->
+    </head>
+    <body>
+        <div id="manipula">
+            <p>Com base nos argumentos apresentados na aula, é possivel entender que
+            uma coisa é uma coisa e outra coisa é outra coisa, admito que não concordo nem discordo,
+            muito pelo contrario.</p> 
+            <p class="paragrafo">É factivel que a Terra é um dos planetas mais conhecidos
+            do mundo, mesmo sabendo que a vida é uma sucessão de sucessivos que sucedem sucessivamente sem cessar. 
+            Agora, mais do que nunca, é a hora, afinal, o importante é o que importa, pois onde quer que você esteja,
+            você sempre estará lá.</p>
+        </div>
+        <br>
+        <hr>
+
+        <h2 class="chamada">Altere o texto acima clicando nos botões</h2>
+
+    <div id="botoes">
+        <input type="button" value="Atualizar" onclick="window.location.reload()"/> 
+        <input type="button" value="Tamanho da Fonte" onclick="mudarTamanho()"/> 
+        <input type="button" value="Cor da Fonte" onclick="corFonte()"/>
+        <input type="button" value="Cor Background" onclick="corBackground()"/>
+        <input type="button" value="Fonte Itálico" onclick="fonteItalico()"/>
+        <input type="button" value="Fonte Negrito" onclick="fonteNegrito()"/>
+        <input type="button" value="Incluir Border" onclick="incluirBorder()"/>
+        <input type="button" value="Excluir Border" onclick="excluirBorder()"/>
+        <input type="button" value="Esconde DIV" onclick="escondeDIV()"/>
+        <input type="button" value="Reaparece DIV" onclick="reapareceDIV()"/>
+        <input type="button" value="NÃO APERTE ESSE BOTÃO!!" onclick="destruicao()"/>
+        <input type="button" value="Cor paragrafo" onclick="corParagrafo()"/>
+        <input type="button" value="Cor botão" onclick="mudarCorBotao()"/>
+        <input type="button" value="Cor todos botões" onclick="mudarCorTodosBotoes()"/>
+        <input type="button" value="Conta botões" onclick="contaBotoes()"/>  
+        <input type="button" value="Censura DIV" onclick="censura()"/>
+        <input type="button" value="Cor Background" onclick="background()"/>
+        <input type="button" value="Mudar Imagem" onclick="mudarImagem()"/>
+    
+    </div>    
+
+    <img id="image" src="xuxa.jpg">
+
+        <script> //começa a brincadeira com JavaScript
+        function mudarTamanho(){
+            document.getElementById("manipula").style.fontSize= "45px"
+        }
+
+        function corFonte(){
+            document.getElementById("manipula").style.color= "orange"
+        }
+
+        function corBackground(){
+            document.getElementById("manipula").style.background="black"
+        }
+
+        function fonteItalico(){
+            document.getElementById("manipula").style.fontStyle= "italic"
+        }
+
+        function fonteNegrito(){
+            document.getElementById("manipula").style.fontWeight= "bold"
+        }
+
+        function incluirBorder(){
+            document.getElementById("manipula").style.border= "2px solid black"
+        }
+
+        function excluirBorder(){
+            document.getElementById("manipula").style.border="0px"
+        }
+
+        function escondeDIV(){
+            document.getElementById("manipula").style.display="none"
+        }
+
+        function reapareceDIV(){
+            document.getElementById("manipula").style.display="block"
+        }
+
+        function destruicao(){
+            var dest = document.querySelector("body")
+            dest.parentNode.removeChild(dest)
+        }
+
+        function corParagrafo(){
+            document.getElementById("manipula").getElementsByClassName("paragrafo")[0].style.background= "red"
+        }
+
+        function mudarCorBotao(){
+            document.getElementsByTagName("input")[5].style.backgroundColor= "orange"
+        }
+
+        function mudarCorTodosBotoes(){
+            for(i = 0; i <= 17; i++){
+                document.getElementsByTagName("input")[i].style.backgroundColor="orange"
+            }
+        }
+
+        function contaBotoes(){
+            var botoes = document.getElementsByTagName("input").length
+            document.getElementById("manipula"). innerHTML= botoes
+        }
+
+        function censura(){
+            document.getElementById("manipula").innerHTML= "************"
+        }
+
+        function background(){
+            document.querySelector("body").style.background= "black"
+        }
+
+        function mudarImagem(){
+            var img = document.querySelector("#image")
+            img.setAttribute("src","alien.jpg")
+        }
+        
+
+        </script> <!-- termina a brincadeira com JavaScript -->
+    </body>
+</html>
