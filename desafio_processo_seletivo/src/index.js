@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './pages/home/App.js';
-import BuscarUsuario from "./pages/buscarUsuario/buscarUsuario.js"
+import App from './page/App.js';
 import reportWebVitals from './reportWebVitals';
 
-import {Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import {Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom'
 
 
 const routing = (
@@ -13,7 +12,7 @@ const routing = (
     <div>
       <Switch>
         <Route exact path="/" component={App}/>
-        <Route path="/buscarusuarios" component={BuscarUsuario}/> 
+        <Redirect to="/"/>
       </Switch>
     </div>
   </Router>
