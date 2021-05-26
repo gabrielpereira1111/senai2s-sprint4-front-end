@@ -22,7 +22,7 @@ class BuscarUsuario extends Component{
 
   buscarUsuario = () => {
       
-      fetch("https://api.github.com/users/"+this.state.nomeUsuario+"/repos")
+      fetch("https://api.github.com/users/"+this.state.nomeUsuario+"/repos?page=2&per_page=10")
       .then(resposta => resposta.json())
       .then(data => this.setState({listaRepositorios : data}))
       .catch(erro => console.log(erro))
