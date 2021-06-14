@@ -1,0 +1,76 @@
+.sctMed{
+    border: 1px solid #009AFA;
+    box-shadow: 1px 1px 3px #C2C2C2;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 20vh;
+    height: 60vh;
+}
+
+.btnMed{
+    background-color: #009AFA;
+    color: white;
+    border: 0;
+    width: 8vw;
+    height: 3vh;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #0941AA;
+    margin-left: 10vw;
+}
+
+.btnMed:hover{
+    cursor: pointer;
+    color: #009AFA;
+    background-color: white;
+    box-shadow: 1px 1px 5px #0941AA;
+}
+
+.TextArea{
+    border: 1px solid #0941AA;
+    margin-left: 1vw;
+    margin-bottom: -10vh;
+    margin-top: 5vh;
+    width: 45vw;
+}
+
+.TextArea::placeholder{
+    color: #009AFA;
+    opacity: 0.5;
+}
+
+.tituloTabelaMed{
+    color: #0B56E3;
+    font-size: 20px;
+    margin-top: 10vh;
+    margin-bottom: -18vh;
+    margin-left: 1vw;
+}
+
+.btnMedInserir{
+    background-color: #009AFA;
+    color: white;
+    border: 0;
+    width: 8vw;
+    height: 3vh;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #0941AA;
+    margin-left: 2vw;
+}
+
+.btnMedInserir:hover{
+    background-color: white;
+    color: #009AFA;
+    cursor: pointer;
+}
+
+.btnMedInserir:disabled{
+    background-color: gray;
+    color: #A8A8A8;
+    box-shadow: 1px 1px 1px #A8A8A8;
+}
+
+.tituloInptMed{
+    color: #0B56E3;
+    margin-bottom: -4vh;
+    margin-left: 1vw;
+}

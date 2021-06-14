@@ -1,0 +1,79 @@
+
+
+.btn{
+    cursor: pointer;
+    background-color: #009AFA;
+    color: white;
+    border: 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #0941AA;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+    background-color: #455C6A;
+    color: #A8A8A8
+}
+
+.inpt-email{
+    width: 22vw;
+    background-color: #0B56E3;
+    border: 0px;
+    border-bottom: 1px solid #009AFA;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 65px;
+    margin-left: 60px;
+    height: 30px;
+}
+
+.inpt-email::placeholder{
+    font-size: 15px;
+    color: white;
+    opacity: 0.5;
+}
+
+.inpt-senha{
+    font-size: 15px;
+    width: 22vw;
+    height: 30px;
+    background-color: #0B56E3;
+    border: 0px;
+    color: white;
+    border-bottom: 1px solid #009AFA;
+    margin-bottom: 20px;
+}
+
+
+.inpt-senha::placeholder{
+    color: white;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.logoV2{
+    margin-bottom: 175px;
+    height: 40vh;
+    width: auto;
+}
+
+.section-inpt{
+    text-align: center;
+    width: 520px;
+    height: 650px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-60%);
+    
+}
+
+
+.divLogin{
+    background-color: #0B56E3;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 100vh;
+}

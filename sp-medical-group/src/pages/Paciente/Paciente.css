@@ -1,0 +1,86 @@
+.divTable{
+    width: 100%;
+}
+
+.sctConsultas{
+    border: 1px solid #0B56E3;
+    box-shadow: 1px 2px 3px #C9C9C9;
+    height: 70vh;
+    margin-top: 25vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.tabelaPacientes{
+    border-spacing: 30px;
+    border-collapse: separate;
+}
+
+#tdMedicoHead{
+    text-align: center;
+    color: #0B56E3;
+    width: 15vw;
+}
+
+#tdDataHead{
+    text-align: center;
+    color: #0B56E3;
+    width: 15vw;
+}
+
+#tdSituacaoHead{
+    text-align: center;
+    color: #0B56E3;
+    width: 30vw;
+}
+
+#tdDescricaoHead{
+    text-align: center;
+    color: #0B56E3;
+    width: 15vw;
+}
+
+.tdHead{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tdMedicoBody{
+    text-align: center;
+    color: #0B56E3;
+}
+
+.tdDataBody{
+    text-align: center;
+    color: #0B56E3;
+}
+
+.tdSituacaoBody{
+    text-align: center;
+    color: #0B56E3;
+}
+
+.tdDescricaoBody{
+    text-align: center;
+    color: #0B56E3;
+}
+
+.tituloTabela{
+    color: #0B56E3;
+    font-size: 40px;
+    margin-bottom: -22vh;
+    margin-left: 5vw;
+    margin-top: 6vh;
+}
+
+.headerConsultasPaciente{
+    box-shadow: 1px 2px 1px #E0E0E0;
+    height: 10vh;
+}
+
+.logo-header{
+    height: 8vh;
+    width: 5vw;
+    padding-left: 90vw;
+    padding-top: 1vh;
+}
