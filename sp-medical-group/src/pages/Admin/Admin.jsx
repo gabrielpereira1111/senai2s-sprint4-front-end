@@ -58,7 +58,7 @@ export default function AdminConsultas(){
     }
     useEffect(buscarListaPaciente, [])
 
-    function cadastrarConsulta(){
+    function cadastrarConsulta(event){
         let consulta = {
             idmedicos : idMedico,
             idpacientes : idPaciente,
@@ -67,7 +67,7 @@ export default function AdminConsultas(){
         }
         axios.post('http://localhost:5000/api/consulta', consulta, {
             headers : {
-                "Authorization" : "Bearer "+localStorage.getItem('usuario.login')
+                "Authorization" : "Bearer "+localStorage.getItem('usuario-login')
             }
         })
         .then(resposta => {
@@ -93,7 +93,7 @@ export default function AdminConsultas(){
             <main>
                 <h3 className="titulo-cadastro" >Cadastrar Consulta</h3>
                 <section className="sctInput">
-                    <form onSubmit={cadastrarConsulta}>
+                    <form onSubmit={(event) => cadastrarConsulta(event)}>
                         <select 
                             className="slctADM"
                             id="slct1"
@@ -132,9 +132,9 @@ export default function AdminConsultas(){
                         <input className="inpt" type="date" value={dataConsulta} onChange={(event) => {setDataConsulta(event.target.value)}}/>
                         <select  className="slctADM"  id="slct3" value={situacao} onChange={(event) => {setSitucao(event.target.value)}}>
                             <option value="0">Situação</option>
-                            <option value="1">Realizada</option>
-                            <option value="2">Cancelada</option>
-                            <option value="3">Agendada</option>
+                            <option >Realizada</option>
+                            <option >Cancelada</option>
+                            <option >Agendada</option>
                         </select>
                         <button className="btn1" type='submit'>Cadastrar</button>
                     </form>
