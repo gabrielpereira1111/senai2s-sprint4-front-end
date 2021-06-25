@@ -44,7 +44,7 @@ namespace senai.gufi.webApi.Controllers
         /// </summary>
         /// <returns>Uma lista de presenças e um status code 200 - Ok</returns>
         // Define que somente o administrador pode acessar o método
-        [Authorize(Roles = "1")]
+        // [Authorize(Roles = "1")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -65,7 +65,7 @@ namespace senai.gufi.webApi.Controllers
         /// <param name="id">ID da presença que será buscada</param>
         /// <returns>Uma presença buscada e um status code 200 - Ok</returns>
         // Define que somente o administrador pode acessar o método
-        [Authorize(Roles = "1")]
+        // [Authorize(Roles = "1")]
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -159,7 +159,7 @@ namespace senai.gufi.webApi.Controllers
         /// <returns>Uma lista de presenças e um status code 200 - Ok</returns>
         /// dominio/api/presencas/minhas
         // Define que somente o usuário comum pode acessar o método
-        [Authorize(Roles = "2")]
+        // [Authorize(Roles = "2")]
         [HttpGet("minhas")]
         public IActionResult GetMy()
         {

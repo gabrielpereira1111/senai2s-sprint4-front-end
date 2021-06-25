@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PICHAU\\Desktop\\Gufi\\senai.gufi.webApi\\senai.gufi.webApi\\senai.gufi.webApi.csproj": {}
+    "C:\\Users\\PICHAU\\Desktop\\RepoGitHub\\senai-2s-sprint4-front-end\\Gufi\\senai.gufi.webApi\\senai.gufi.webApi\\senai.gufi.webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PICHAU\\Desktop\\Gufi\\senai.gufi.webApi\\senai.gufi.webApi\\senai.gufi.webApi.csproj": {
+    "C:\\Users\\PICHAU\\Desktop\\RepoGitHub\\senai-2s-sprint4-front-end\\Gufi\\senai.gufi.webApi\\senai.gufi.webApi\\senai.gufi.webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\Gufi\\senai.gufi.webApi\\senai.gufi.webApi\\senai.gufi.webApi.csproj",
+        "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\RepoGitHub\\senai-2s-sprint4-front-end\\Gufi\\senai.gufi.webApi\\senai.gufi.webApi\\senai.gufi.webApi.csproj",
         "projectName": "senai.gufi.webApi",
-        "projectPath": "C:\\Users\\PICHAU\\Desktop\\Gufi\\senai.gufi.webApi\\senai.gufi.webApi\\senai.gufi.webApi.csproj",
+        "projectPath": "C:\\Users\\PICHAU\\Desktop\\RepoGitHub\\senai-2s-sprint4-front-end\\Gufi\\senai.gufi.webApi\\senai.gufi.webApi\\senai.gufi.webApi.csproj",
         "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PICHAU\\Desktop\\Gufi\\senai.gufi.webApi\\senai.gufi.webApi\\obj\\",
+        "outputPath": "C:\\Users\\PICHAU\\Desktop\\RepoGitHub\\senai-2s-sprint4-front-end\\Gufi\\senai.gufi.webApi\\senai.gufi.webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",

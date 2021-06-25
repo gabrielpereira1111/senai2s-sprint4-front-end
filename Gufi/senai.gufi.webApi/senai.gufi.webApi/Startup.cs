@@ -35,7 +35,7 @@ namespace senai.gufi.webApi
             services.AddCors(options => {
                 options.AddPolicy("CorsPolicy",
                     builder => {
-                        builder.WithOrigins("http://localhost:3000")
+                        builder.WithOrigins("http://localhost:3000","http://localhost:19006")
                                                                     .AllowAnyHeader()
                                                                     .AllowAnyMethod();
                                                                 
