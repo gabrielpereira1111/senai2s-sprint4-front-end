@@ -25,7 +25,6 @@
     color: white;
     font-size: 15px;
     margin-bottom: 65px;
-    margin-left: 60px;
     height: 30px;
 }
 
@@ -57,6 +56,9 @@
     margin-bottom: 175px;
     height: 40vh;
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-inpt{
@@ -68,6 +70,7 @@
     top: 50%;
     transform: translate(-50%,-60%);
     
+    
 }
 
 
@@ -76,4 +79,20 @@
     margin-left: 10vw;
     margin-right: 10vw;
     height: 100vh;
+}
+
+.div-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -493px;
+    width: 1503px;
+}
+
+.div-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -493px;
+    width: 1503px;
 }

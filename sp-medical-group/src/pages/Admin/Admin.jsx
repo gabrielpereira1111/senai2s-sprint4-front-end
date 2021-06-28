@@ -163,7 +163,7 @@ export default function AdminConsultas(){
                                                 <td className="tdMedicoBody">{consulta.idconsultas}</td>
                                                 <td className="tdMedicoBody">{consulta.idmedicosNavigation.nome}</td>
                                                 <td className="tdMedicoBody">{consulta.idpacientesNavigation.nome}</td>
-                                                <td className="tdDataBody">{consulta.dataConsulta}</td>
+                                                <td className="tdDataBody">{Intl.DateTimeFormat("pt-BR").format(new Date(consulta.dataConsulta))}</td>
                                                 <td className="tdSituacaoBody">{consulta.situacao}</td>
                                             </tr>
                                         )

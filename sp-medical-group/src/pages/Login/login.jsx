@@ -74,42 +74,46 @@ class Login extends Component{
                     <main>
                         <div className="divLogin">
                             <section className="section-inpt">
-                                <img className="logoV2" src={logoV2} alt="Logo SP Med Group" />
-                                <form  onSubmit={this.buscarEmailSenha}>
-                                    
-                                    <input 
-                                        className="inpt-email"
-                                        style={{display : 'block'}}
-                                        type="text"
-                                        name="email"
-                                        value={this.state.email}
-                                        onChange={this.atualizaCampos}
-                                        placeholder="Email" 
-                                    />
+                                <div className="div-img">
+                                    <img className="logoV2" src={logoV2} alt="Logo SP Med Group" />
+                                </div>
+                                <div className="div-form">
+                                    <form  onSubmit={this.buscarEmailSenha}>
+                                        
+                                        <input 
+                                            className="inpt-email"
+                                            style={{display : 'block'}}
+                                            type="text"
+                                            name="email"
+                                            value={this.state.email}
+                                            onChange={this.atualizaCampos}
+                                            placeholder="Email" 
+                                        />
 
-                                    <input 
-                                        className="inpt-senha"
-                                        type="password" 
-                                        name="senha"
-                                        value={this.state.senha}
-                                        onChange={this.atualizaCampos}
-                                        placeholder="Senha"
-                                    />
-                                    <p style={{color : 'white'}}>{this.state.errorMessage}</p>
+                                        <input 
+                                            className="inpt-senha"
+                                            type="password" 
+                                            name="senha"
+                                            value={this.state.senha}
+                                            onChange={this.atualizaCampos}
+                                            placeholder="Senha"
+                                        />
+                                        <p style={{color : 'white'}}>{this.state.errorMessage}</p>
 
-                                    {
-                                        this.state.isLoading === false &&
-                                        <button className="btn" type='submit' disabled={this.state.email === '' || this.state.senha === ''}>
-                                            Login
-                                        </button>
+                                        {
+                                            this.state.isLoading === false &&
+                                            <button className="btn" type='submit' disabled={this.state.email === '' || this.state.senha === ''}>
+                                                Login
+                                            </button>
 
-                                    }
-                                    {
-                                        this.state.isLoading === true && 
-                                        <button className="btn" type="submit" disabled>Login</button>
-                                    }
-                                    
-                                </form>
+                                        }
+                                        {
+                                            this.state.isLoading === true && 
+                                            <button className="btn" type="submit" disabled>Login</button>
+                                        }
+                                        
+                                    </form>
+                                </div>
                             </section>
                         </div>
                     </main>

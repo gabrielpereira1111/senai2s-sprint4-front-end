@@ -109,7 +109,7 @@ export default function MedicosConsultas(){
                                         return(
                                             <tr key={consulta.idconsultas}>
                                                 <td className="tdMedicoBody">{consulta.idpacientesNavigation.nome}</td>
-                                                <td className="tdMedicoBody">{consulta.dataConsulta}</td>
+                                                <td className="tdMedicoBody">{Intl.DateTimeFormat("pt-BR").format(new Date(consulta.dataConsulta))}</td>
                                                 <td className="tdMedicoBody">{consulta.situacao}</td>
                                                 <td className="tdMedicoBody">{consulta.descricao}</td>
                                                 <td className="tdMedicoBody"><button className="btnMed" onClick={

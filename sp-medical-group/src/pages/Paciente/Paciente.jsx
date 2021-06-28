@@ -55,7 +55,7 @@ export default function PacientesConsulta(){
                                             return(
                                                 <tr key={consulta.idconsultas}>
                                                     <td className="tdMedicoBody">{consulta.idmedicosNavigation.nome}</td>
-                                                    <td className="tdDataBody">{consulta.dataConsulta}</td>
+                                                    <td className="tdDataBody">{Intl.DateTimeFormat("pt-BR").format(new Date(consulta.dataConsulta))}</td>
                                                     <td className="tdSituacaoBody">{consulta.situacao}</td>
                                                     <td className="tdDescricaoBody">{consulta.descricao}</td>
                                                 </tr>
